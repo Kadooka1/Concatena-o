@@ -1,117 +1,106 @@
-🍹 Máquina de Sucos Flexível
+📘 Projeto: Concatenação de Campos (Nick + Earnings)
+📋 Descrição
 
-Uma aplicação web simples feita em HTML + JavaScript puro que permite ao usuário montar seu próprio suco escolhendo:
+Este projeto em HTML + JavaScript coleta informações digitadas pelo usuário em um formulário e junta (concatena) os valores em uma única mensagem.
 
-✅ Uma ou mais frutas
+O usuário:
 
-✅ Tipo de líquido (água ou leite)
+Digita seu nick do Fortnite
 
-✅ Com ou sem açúcar
+Digita seus earnings
 
-Tudo isso de forma interativa diretamente no navegador.
+Clica em Enviar
 
-📸 Demonstração
-
-O usuário pode:
-
-Selecionar múltiplas frutas (Ctrl/Shift)
-
-Clicar em Selecionar Todas
-
-Escolher o líquido
-
-Marcar açúcar (opcional)
-
-Clicar em Preparar Suco
-
-Receber uma mensagem com o suco final 🍹
+O sistema mostra um alert com as informações combinadas
 
 Exemplo:
 
-🍹 Seu suco de morango e banana com leite e açúcar está pronto!
+Player123 $5000
 
-🚀 Tecnologias usadas
+🚀 Tecnologias utilizadas
 
 HTML5
 
 JavaScript (Vanilla JS)
 
-Sem bibliotecas externas
-
 📂 Estrutura do projeto
-/
+/projeto
  ├─ index.html
  └─ README.md
 
 ▶️ Como executar
 
-Baixe o arquivo index.html
+Abra o arquivo .html no navegador
 
-Clique duas vezes nele
-ou
+Preencha os campos do formulário
 
-Abra com o navegador (Chrome, Edge, Firefox, etc.)
+Clique em Enviar
 
-Pronto! Não precisa instalar nada.
+Veja a mensagem exibida na tela
 
-⚙️ Funcionalidades
-🍓 Seleção de frutas
+💻 Como funciona
+Elementos principais:
 
-Lista múltipla (<select multiple>)
+input type="text" → Nick
 
-Permite escolher várias frutas ao mesmo tempo
+input type="number" → Earnings
 
-🥛 Escolha de líquido
+Botão Enviar → chama a função JavaScript
 
-Água
+alert() → mostra o resultado
 
-Leite
+Lógica do JavaScript:
+js_nickfort = document.Form.nickfort.value;
+js_earnings = document.Form.earnings.value;
 
-🍬 Açúcar opcional
+js_nickeearnigns = js_nickfort + ' $' + js_earnings;
 
-Checkbox para adicionar ou remover açúcar
+window.alert('Suas informações: ' + js_nickeearnigns);
 
-🔘 Botões
+Explicação:
 
-Selecionar Todas → marca todas as frutas automaticamente
+.value → pega o texto digitado
 
-Preparar Suco → monta a frase final e exibe um alerta
++ → concatena strings
 
-🧠 Lógica principal
-fazerSuco()
+' $' → adiciona símbolo do dinheiro
 
-Coleta frutas selecionadas
+alert() → exibe mensagem pop-up
 
-Verifica líquido escolhido
+🧠 Exemplo de uso
+Entrada:
+Nick: NinjaBR
+Earnings: 15000
 
-Checa açúcar
+Saída:
+Suas informações: NinjaBR $15000
 
-Monta mensagem final
+🔧 Possíveis melhorias
 
-selecionarTodas()
+Você pode melhorar o projeto adicionando:
 
-Percorre todas as opções do select
+Validação para campos vazios
 
-Marca todas como selecionadas
+Formatação monetária (R$ 15.000,00)
 
-💡 Possíveis melhorias futuras
+Mostrar resultado na página ao invés de alert
 
-Sugestões se quiser evoluir o projeto:
+CSS para estilizar o formulário
 
-Mostrar resultado na tela em vez de alert
+Botão de copiar resultado
 
-Adicionar mais frutas
+Template mais moderno com Flexbox ou Bootstrap
 
-Adicionar imagens
+📚 Objetivo educacional
 
-Estilizar com CSS
+Ideal para treinar:
 
-Animação de "preparando o suco"
+Manipulação de formulários
 
-Contador de calorias
+Captura de dados com .value
 
-Versão mobile responsiva
+Funções em JavaScript
 
-📜 Licença
+Concatenação de strings
 
-Projeto livre para estudos e aprendizado.
+Eventos de botão (onclick)
