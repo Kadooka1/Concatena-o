@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenação</title>
+</head>
+<body>
+    <h2>Concatenação de Campos</h2>
+        <form name="Form" action="" method="post">
+            Digite seu nick do Fortnite: <input type="text" name="nickfort"><p></p>
+            Digite quantos earnigns vc tem: <input type="number" name="earnings"><p></p>
+            <input type="button" name="concatena1" value="Enviar" onclick="concatena()" >
+            <input type="reset" name="cancela" value="Cancelar">
+        </form>
+
+        <script>
+            var js_nickfort;
+            var js_earnings;
+            var js_nickeearnigns;
+
+            function concatena() {
+                js_nickfort = document.Form.nickfort.value;
+
+                js_earnings = document.Form.earnings.value;
+
+                js_nickeearnigns = js_nickfort + ' $' + js_earnings;
+
+                window.alert('Suas informações: ' + js_nickeearnigns);
+            }
+        </script>
+
+        
+</body>
+</html>
